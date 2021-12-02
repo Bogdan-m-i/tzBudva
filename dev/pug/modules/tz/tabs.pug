@@ -1,0 +1,10 @@
+.tabs
+    ul#pills-tab.nav.nav-pills.tabs__links(role='tablist')
+        li.nav-item(role='presentation')
+            button#pills-canvas-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-canvas' type='button' role='tab' aria-controls='pills-canvas' aria-selected='true') canvas
+        li.nav-item(role='presentation')
+            button#pills-notes-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-notes' type='button' role='tab' aria-controls='pills-notes' aria-selected='false') notes
+    #pills-tabContent.tab-content.tabs__content
+        #pills-canvas.tab-pane.fade.show(role='tabpanel' aria-labelledby='pills-canvas-tab') 
+            include ../canvas/canvas
+        #pills-notes.tab-pane.fade.active(role='tabpanel' aria-labelledby='pills-notes-tab') 2
