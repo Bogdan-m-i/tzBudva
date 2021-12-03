@@ -9,9 +9,10 @@ import svg4everybody from 'svg4everybody';
 
 // Компоненты
 // import { animateCSS } from './components/animation.js';
-import'./components/slider.js';
+// import'./components/slider.js';
 import'./components/fetch.js';
 import'./components/canvas.js';
+import'./components/notes.js';
 
 svg4everybody();
 objectFitImages();

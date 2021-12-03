@@ -6,6 +6,6 @@ async function getData() {
 
 async function render() {
 	const data = await getData();
-	console.log(data);
+	// console.log(data);
 }
 render()

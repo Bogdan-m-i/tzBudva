@@ -12,6 +12,7 @@ $modal-content-box-shadow-xs: none;
 
 // @import "../../../../node_modules/bootstrap/scss/modal";
 @import "../../../../node_modules/bootstrap/scss/nav";
+@import "../../../../node_modules/bootstrap/scss/buttons";
 // Все компоненты (много мусора)
 // @import "../../../../node_modules/bootstrap/scss/bootstrap-grid";
 
@@ -20,3 +21,8 @@ $include-column-box-sizing: true !default;
 
 @import "../../../../node_modules/bootstrap/scss/containers";
 @import "../../../../node_modules/bootstrap/scss/grid";
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}

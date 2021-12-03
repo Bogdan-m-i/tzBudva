@@ -1,0 +1,114 @@
+.notes {
+    &__header {
+        padding: 0 0 10px 0;
+        // border-bottom: 1px solid rgba(0, 0, 0, .1);
+        color: #555;
+        font-weight: bold;
+    }
+    &__body {
+        color: #555;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        padding-bottom: 16px;
+        &-item {
+            // padding: 0 20px;
+            // margin: 5px 0;
+            margin-top: 16px;
+            &-txt {
+                position: relative;
+                display: flex;
+                & > span {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin: auto 0 auto 8px;
+                }
+            }
+            &-btn {
+                display: flex;
+                button {
+                    max-height: 40px;
+                    .icon {
+                        width: 24px;
+                        height: 24px;
+                        fill: rgb(255, 133, 133);
+                        transition: .2s;
+                    }
+                    &:hover {
+                        .icon {
+                            width: 24px;
+                            height: 24px;
+                            fill: red;
+                        }
+                    }
+                    &.edit {
+                        background-color: #f8f9fa;
+                        font-weight: bold;
+                        margin: auto 0 auto auto;
+                        &:hover {
+                            background-color: #dbdcff;
+                            color: #fff;
+                        }
+                        &.hide {
+                            display: none;
+                        }
+                    }
+                    &.delete {
+                        margin-left: 8px;
+                        &:hover {
+                            background-color: #f8f9fa;
+                        }
+                    }
+                    &.submit {
+                        background-color: #c8ffd1;
+                        font-weight: bold;
+                        margin-left: 8px;
+                        &:hover {
+                            background-color: #dbdcff;
+                            color: #fff;
+                        }
+                        &.hide {
+                            display: none;
+                        }
+                    }
+                    &.cancel {
+                        background-color: #ffc8c8;
+                        font-weight: bold;
+                        margin: auto 0 auto auto;
+                        &:hover {
+                            background-color: #ffa5a5;
+                            color: #fff;
+                        }
+                        &.hide {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            label{
+                position: absolute;
+                top: 50%;
+                transform: translate(-9px, -50%);
+                background-color: white;
+                width: calc(100% - 24px);            
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__form {
+        margin-top: 40px;
+        .btn-submit {
+            height: 40px;
+            width: 100%;
+            background-color: #c8ffd1;
+            color: #555;
+            font-weight: bold;
+            &:hover {
+                background-color: #dbdcff;
+                color: #fff;
+            }
+        }
+    }
+}
+

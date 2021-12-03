@@ -1,0 +1,16 @@
+.notes
+    .notes__header.row         
+        .notes__header-title.col-5 Name
+        .notes__header-title.col-7 Phone
+    .notes__body
+
+
+    form#note__add.notes__form.form.row(action="./form.php" novalidate)
+        label.col-5
+            input.notes-name(placeholder='Enter a name' pattern="([а-яА-Я -]{1,})|([a-zA-z -]{1,})" required)
+            span.form__error Enter a name
+        label.col-5
+            input.notes-phone(placeholder='Enter your phone number' data-type="phone" pattern="[+]7[ ][(][0-9]{3}[)][ ][0-9]{3}[-][0-9]{2}[-][0-9]{2}" required)
+            span.form__error enter your phone number
+        .col-2
+            button.btn.btn-submit(type="submit") add user
